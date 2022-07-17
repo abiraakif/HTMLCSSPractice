@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>Program</title>
+</head>
+
+<body>
+    <input type="text" id="firstplustextbox">
+    +
+    <input type="text" id="secondplustextbox">
+    <button onclick="calculateaddition()">=</button>
+    <input type="text" id="resultofplustextbox">
+
+    <br><br>
+    <input type="text" id="firstminustextbox">
+    -
+    <input type="text" id="secondminustextbox">
+    <button onclick="calculatesubraction()">=</button>
+    <input type="text" id="resultofminustextbox">
+
+    <br><br>
+    <input type="text" id="firstmultiplytextbox">
+    x
+    <input type="text" id="secondmultiplytextbox">
+    <button onclick="calculatemultiplication()">=</button>
+    <input type="text" id="resultofmultiplytextbox">
+</body>
+<script>
+    function calculateaddition() {
+        let textBox1 = document.getElementById("firstplustextbox");
+        let x = textBox1.value;
+
+        let textbox2 = document.getElementById("secondplustextbox");
+        let y = textbox2.value;
+
+        let textbox3 = document.getElementById("resultofplustextbox");
+        textbox3.value = Number(x) + Number(y)
+    }
+
+    function calculatesubraction() {
+        let textbox1 = document.getElementById("firstminustextbox");
+        let x = textbox1.value;
+
+        let textbox2 = document.getElementById("secondminustextbox");
+        let y = textbox2.value;
+
+        let textbox3 = document.getElementById("resultofminustextbox");
+        textbox3.value = Number(x) - Number(y);
+
+    }
+
+    function calculatemultiplication() {
+        let textbox1 = document.getElementById("firstmultiplytextbox");
+        let x = textbox1.value;
+
+        let textbox2 = document.getElementById("secondmultiplytextbox");
+        let y = textbox2.value;
+
+        let textbox3 = document.getElementById("resultofmultiplytextbox");
+        textbox3.value = Number(x) * Number(y);
+    }
+</script>
+
+</html>

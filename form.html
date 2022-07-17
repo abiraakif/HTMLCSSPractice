@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Form</title>
+    <style>
+        input
+        {
+            height: 50;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Loan Application Form</h1><br>
+
+    <p>Please fill in all needed information in the loan application form below to request a loan from your
+        organization.<br>Information regarding income assets are requested for qualification.</p><br>
+
+    <form>
+        <table>
+            <tr>
+                <td><label> Desired loan amount </label></td>
+                <td><input type="text" placeholder="USD 0"></td>
+            </tr>
+            <tr>
+                <td><label> Annual Income </label></td>
+                <td><input type="text" placeholder="USD 0.00"></td>
+            </tr>
+
+            <tr>
+                <td><label for="Purpose of the loan"> What will the loan be used for? </label></td>
+                <td> <select purpose="Purpose of the loan" id="Purpose of the loan">
+                        <option value="Business launch">Business launch</option>
+                        <option value="Consolidate dept to pay off bills">Consoloidate dept to pay off bills</option>
+                        <option value="Cover unplanned emergency expenses">Cover unplanned emergrncy expenses</option>
+                        <option value="Make necessary home repairs">make necessary home repairs</option>
+                        <option value="Finance funeral expenses">Finance funeral expenses</option>
+                        <option value="Help cover moving costs">Help cover moving costs</option>
+                        <option value="Make a large purchase">Make a large purchase</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label> Your name </label></td>
+                <td><input type="text" placeholder="First"> <input type="text" placeholder="Last"></td>
+            </tr>
+            <tr>
+                <td><label> Birth Date </label></td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td><label> Phone number </label></td>
+                <td><input type="tel" placeholder="### ### #####"></td>
+            </tr>
+            <tr>
+                <td><label> Email </label></td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td><label> Address </label></td>
+                <td><input type="text" placeholder="Street Address"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" placeholder="Street Address Line 2"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" placeholder="City"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" placeholder="Region"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" placeholder="Postal/Zip Code"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="text" placeholder="Country"></td>
+                </td>
+            </tr>
+            <tr>
+                <td><label> Job title </label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td><label> Employer Name </label></td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+         
+    </form>
+</body>
+
+</html>
